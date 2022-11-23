@@ -1,0 +1,11 @@
+<button (click)="openDialog()">{{inputData.Form}}</button>
+
+<ng-template>
+  <div class="example-dialog-content" cdkDrag cdkDragRootElement=".cdk-overlay-pane">
+    <form>
+        {{inputData.Name}}<input type="text" />
+        {{inputData.Age}}<input type="number" />
+        {{inputData.Specific}}<input type="text" />
+    </form>
+  </div>
+</ng-template>
